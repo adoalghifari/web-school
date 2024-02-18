@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMKN 64 Jakarta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link rel="icon" href="images/logo.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/64logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="profil.html">PROFIL</a></li>
+            <li><a href="visi-misi.html">VISI & MISI</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Visi & Misi</h1>
+    </section>
+
+    <!----- about us content-->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h3>VISI</h3>
+          <p>
+            Memiliki tamatan yang Berbudi pekerti luhur, Berkarakter, Mandiri,
+            Berprestasi dan Berjiwa Wirausaha
+          </p>
+          <h3>MISI</h3>
+          <p>
+            1. Mengimplementasikan 5S (Senyum, Sapa, Salam, Sopan dan
+            Santun).<br />
+            2. Membangun peserta didik menjadi seseorang yang memiliki sikap
+            profesional.<br />
+            3. Mengarahkan peserta didik untuk meningkatkan potensi dan keahlian
+            diri melalui pelatihan di dalam maupun di luar lingkungan sekolah<br />
+            4. Menyiapkan tamatan agar mendapatkan prestasi juara di tingkat
+            nasional dengan pelatihan di setiap kompetensi.<br />
+            5. Mengarahkan peserta didik mempunyai jiwa wirausaha melalui
+            pelajaran kewirausahaan<br />
+          </p>
+        </div>
+        <div class="about-col">
+          <br /><br /><br /><br />
+          <img src="images/home-slide-1.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-----footer-->
+
+    <footer>
+      <div class="row">
+        <div class="col">
+          <h3>
+            Hubungi Kami
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>SMKN 64 Jakarta</p>
+          <p>Jakarta Timur,Cawang</p>
+          <p>
+            Jl. Jaani Nasir No.8, RT.8/RW.11, Cawang, Kec. Kramat jati, Jakarta
+            Timur 13630
+          </p>
+          <p class="email-id">info@smkn64-jkt.sch.id</p>
+          <h4>08978891895 (Hilal)</h4>
+          <h4>081212001521 (Agus)</h4>
+        </div>
+        <div class="col">
+          <!-- <img src="" class="logo"> -->
+          <h3>
+            Tags
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>
+            #Perpustakaan Online <br />
+            #PPDB Online <br />
+            #Pengumuman Mutasi
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="profil.html">PROFIL</a></li>
+            <li><a href="visi-misi.html">VISI & MISI</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>
+            Follow Media sosial kami
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://www.instagram.com/smkn64jakarta/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">SMKN 64 JAKARTA © 2023 - All Rights Reserved</p>
+    </footer>
+
+    <!----- js for toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/16ff4965e2.js"></script>
+
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".about-col", { delay: 500, origin: "bottom" });
+    </script>
+  </body>
+</html>
